@@ -24570,12 +24570,13 @@
             r(n[7])
           );
         }
-        return "xxxxxxxxxxxx4xxxyxxxxxxxxxxxxxxx".replace(/[xy]/g, function (
-          e
-        ) {
-          var t = (16 * Math.random()) | 0;
-          return ("x" === e ? t : (3 & t) | 8).toString(16);
-        });
+        return "xxxxxxxxxxxx4xxxyxxxxxxxxxxxxxxx".replace(
+          /[xy]/g,
+          function (e) {
+            var t = (16 * Math.random()) | 0;
+            return ("x" === e ? t : (3 & t) | 8).toString(16);
+          }
+        );
       }
       function l(e) {
         if (!e) return {};
@@ -62518,7 +62519,9 @@
     const Cl = (function (e) {
         var t;
         const n =
-          (((t = class extends c.Component {
+          (((t = class extends (
+            c.Component
+          ) {
             constructor() {
               super(...arguments),
                 (this.shouldCancelTap = !1),
@@ -81424,7 +81427,9 @@
     function bS(e, t = class {}) {
       var n;
       const r =
-        (((n = class extends t {
+        (((n = class extends (
+          t
+        ) {
           constructor() {
             super(...arguments), (this.__class = yS[e]);
           }

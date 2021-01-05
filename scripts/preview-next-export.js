@@ -24557,12 +24557,13 @@
             r(n[7])
           );
         }
-        return "xxxxxxxxxxxx4xxxyxxxxxxxxxxxxxxx".replace(/[xy]/g, function (
-          e
-        ) {
-          var t = (16 * Math.random()) | 0;
-          return ("x" === e ? t : (3 & t) | 8).toString(16);
-        });
+        return "xxxxxxxxxxxx4xxxyxxxxxxxxxxxxxxx".replace(
+          /[xy]/g,
+          function (e) {
+            var t = (16 * Math.random()) | 0;
+            return ("x" === e ? t : (3 & t) | 8).toString(16);
+          }
+        );
       }
       function l(e) {
         if (!e) return {};
@@ -61397,7 +61398,9 @@
     function eg(e, t = class {}) {
       var n;
       const r =
-        (((n = class extends t {
+        (((n = class extends (
+          t
+        ) {
           constructor() {
             super(...arguments), (this.__class = Zp[e]);
           }
